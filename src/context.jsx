@@ -74,7 +74,8 @@ const AppProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
-export { AppProvider, AppContext };
+// export the AppContext and the AppProvider components so that we can import them in the index.jsx file and wrap the App component around the AppProvider component 
+export { AppProvider };
 
 export const useGlobalContext = () => {
   return useContext(AppContext);
